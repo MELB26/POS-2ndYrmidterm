@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+b {
+    font-weight: bold;
+    font-size: 25px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.item-container button {
+    color: #efeeee;
+    background-color: rgb(63, 95, 255);
+    border: none;
+    border-radius: 5px 5px 5px 5px;
+    transition: background-color 0.3s ease;
+    height: 30px;
+    margin-top: 5px;
+    margin-left: 75px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.total-container button {
+    color: #efeeee;
+    background-color: rgb(1, 166, 6);
+    border: none;
+    border-radius: 5px 5px 5px 5px;
+    transition: background-color 0.3s ease;
+    height: 30px;
+    width: 45px;
+    font-weight: bold;
+    margin-left: 220px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+button:hover {
+    background-color: rgb(18, 57, 255);
+}
+.container {
+    display: flex;
+    margin-left: 80px;
+    border-radius: 5px 5px 5px 5px;
+}
+.menu-container, .ordered-items-container {
+    margin-top: 50px;
+    border-radius: 5px 5px 5px 5px;
+}
+.menu-title, .ordered-items-title {
+    font-family: Arial, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #f6f6f6;
+    text-indent: 10px;
+    border: 1px solid #ececec;
+    border-radius: 5px 5px 0px 0px;
+}
+.menu-container {
+    margin-right: 15px;
+}
+.menu-items {
+    padding: 10px;
+    border-radius: 0px 0px 5px 5px;
+    border: 1px solid #ececec;
+    
+}
+.menu-container .item-container {
+    display: inline-block; /* Display items horizontally */
+    margin: 0px 10px 10px 10px; /* Add spacing between items */
+    border: 1px solid #ececec;
+    padding: 0px;
+    border-radius: 5px 5px 5px 5px;
+}
+.menu-container .item-container img {  
+    border-radius: 5px 5px 0px 0px;
+}
+.menu-container .item-container input[type="number"]{
+    text-indent: 5px;
+    border: 1px solid #c5c5c5;
+    border-radius: 5px 5px 5px 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 150px;
+    height: 25px;
+}
+.total-container input[type="number"] {
+    text-indent: 5px;
+    border: 1px solid #c5c5c5;
+    border-radius: 5px 5px 5px 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 250px;
+    height: 25px;
+}
+.total-container {
+    padding-top: 10px;
+    font-size: 25px;
+    font-weight: bold;
+}
+.ordered-items-container .total-container {
+    border: 1px solid #ececec;
+}
+.order-card {
+    background-color: #ffffff;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ececec;
+    border-radius: 5px;
+}
+p {
+    font-family: Arial, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    text-indent: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+a {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(1, 166, 6);
+    margin-left: 195px;
+}

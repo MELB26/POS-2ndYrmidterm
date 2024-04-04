@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Point of Sale</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="menu-container">
+            <div class="menu-title">Menu</div>
+            <div class="menu-items">
+                <div class="item-container">
+                    <div>
+                        <img src="pics/burger.jpg" alt="Burger" style="width: 100%;">
+                        <h4><b>Burger</b><br><b>60 PHP</b></h4>
+                    </div>
+                    <input type="number" id="burger-quantity" placeholder="Enter how many">
+                    <br>
+                    <button onclick="addToOrder('Burger', 60, 'burger-quantity')">Add to order</button>
+                </div>
+                <div class="item-container">
+                    <div>
+                        <img src="pics/fishbol.jpg" alt="Fishbol" style="width: 100%;">
+                        <h4><b>Fishbol</b><br><b>20 PHP</b></h4>
+                    </div>
+                    <input type="number" id="fishbol-quantity">
+                    <br>
+                    <button onclick="addToOrder('Fishbol', 20, 'fishbol-quantity')">Add to order</button>
+                </div>
+                <div class="item-container">
+                    <div>
+                        <img src="pics/kwekkwek.jpg" alt="Kwek-Kwek" style="width: 100%;">
+                        <h4><b>Kwek-Kwek</b><br><b>25 PHP</b></h4>
+                    </div>
+                    <input type="number" id="kwek-kwek-quantity">
+                    <br>
+                    <button onclick="addToOrder('Kwek-Kwek', 25, 'kwek-kwek-quantity')">Add to order</button>
+                </div>
+                <div class="item-container">
+                    <div>
+                        <img src="pics/kikiam.jpg" alt="Kikiam" style="width: 100%;">
+                        <h4><b>Kikiam</b><br><b>20 PHP</b></h4>
+                    </div>
+                    <input type="number" id="kikiam-quantity">
+                    <br>
+                    <button onclick="addToOrder('Kikiam', 20, 'kikiam-quantity')">Add to order</button>
+                </div>
+            </div>
+        </div>
+    
+        <div class="ordered-items-container">
+            <div class="ordered-items-title">Ordered Items</div>
+            <div class="ordered-item-container" id="order-details">
+                <!-- Cards will be added here dynamically -->
+            </div>
+            <div class="total-container">
+                <div>
+                    <b>Total:</b> <span id="total"></span><br>
+                    <input type="number" id="customer-cash" placeholder="Enter cash amount here"><br>
+                    <button onclick="calculateChange()">Pay!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="main.js"></script>
+</body>
+</html>
